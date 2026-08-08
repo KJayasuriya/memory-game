@@ -11,7 +11,10 @@ const baseImages = [
     "assets/project-expo.png",
     "assets/coding.png"
 ];
-
+baseImages.forEach((image) => {
+    const img = new Image();
+    img.src = image;
+});
 // Duplicate images
 let memory = [...baseImages, ...baseImages];
 
