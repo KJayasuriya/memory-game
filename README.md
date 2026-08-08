@@ -58,3 +58,12 @@ memory-game/
 ├── game-logic.js
 ├── main.css
 └── README.md
+```
+
+## 🚀 Future Improvements
+
+- Add difficulty levels such as **Easy, Medium, and Hard**
+- Add sound effects and background music
+- Add a restart/new game button
+- Add a high-score system
+- Add different card themes
