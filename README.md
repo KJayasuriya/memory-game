@@ -10,7 +10,7 @@ The objective is to find all matching pairs by flipping two cards at a time. The
 
 ## 🎥 Demo
 
-https://github.com/user-attachments/assets/0539d746-c223-4a4c-a526-8b4401f7b4f9
+https://github.com/user-attachments/assets/fe3163a6-575b-441e-b103-9e25c943431d
 
 The demo shows the card flipping animation, matching cards, score tracking, timer, and game interaction.
 

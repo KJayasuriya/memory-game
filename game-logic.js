@@ -3,14 +3,14 @@ const scoreBoard = document.getElementById("scoreboard");
 const timerBoard = document.getElementById("timer-board");
 
 const baseImages = [
-    "assets/gmail-logo.png",
-    "assets/html_icon.png",
-    "assets/linkedin-logo.png",
-    "assets/youtube.png",
-    "assets/nature.png",
-    "assets/paper-present.png",
-    "assets/project-expo.png",
-    "assets/coding.png"
+    "./assets/cat.svg",
+    "./assets/dog.svg",
+    "./assets/fox.svg",
+    "./assets/panda.svg",
+    "./assets/lion.svg",
+    "./assets/frog.svg",
+    "./assets/penguin.svg",
+    "./assets/koala.svg"
 ];
 
 // Preload images
