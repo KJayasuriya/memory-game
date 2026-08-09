@@ -41,21 +41,21 @@ The demo shows the card flipping animation, matching cards, score tracking, time
 ## 📂 Project Structure
 
 ```text
+
 memory-game/
-├── assets/
-│   ├── coding.png
-│   ├── demo.webm
-│   ├── favicon.png
-│   ├── gmail-logo.png
-│   ├── html_icon.png
-│   ├── linkedin-logo.png
-│   ├── logo.png
-│   ├── nature.png
-│   ├── paper-present.png
-│   ├── project-expo.png
-│   └── youtube.png
-├── index.html
+├── assets
+│   ├── cat.svg
+│   ├── demo.webm
+│   ├── dog.svg
+│   ├── favicon.png
+│   ├── fox.svg
+│   ├── frog.svg
+│   ├── koala.svg
+│   ├── lion.svg
+│   ├── panda.svg
+│   └── penguin.svg
 ├── game-logic.js
+├── index.html
 ├── main.css
 └── README.md
 ```
