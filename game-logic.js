@@ -208,10 +208,3 @@ window.addEventListener("appinstalled", () => {
 
     installBanner.style.display = "none";
 });
-const isFirefox = navigator.userAgent.toLowerCase().includes("firefox");
-
-if (isFirefox && !window.matchMedia("(display-mode: standalone)").matches) {
-    installBanner.style.display = "block";
-    installButton.style.display = "none";
-    document.getElementById("firefox-install").style.display = "block";
-}

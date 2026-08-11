@@ -1,4 +1,4 @@
-const CACHE_NAME = "memory-game-v6";
+const CACHE_NAME = "memory-game-v7";
 
 const FILES_TO_CACHE = [
     "./",

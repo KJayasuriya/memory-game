@@ -74,11 +74,6 @@ h1 {
     font-size: 1rem;
 }
 
-#firefox-install {
-    display: none;
-
-    font-size: 0.9rem;
-}
 
 /* --------------------
    Score / Timer
@@ -180,10 +175,6 @@ h2 {
     #install-button {
         padding: 6px 14px;
         font-size: 0.9rem;
-    }
-
-    #firefox-install {
-        font-size: 0.85rem;
     }
 
     .container {
