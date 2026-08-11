@@ -156,9 +156,7 @@ After these resources have been cached, the game can continue working without an
 
 A gameplay recording is included in:
 
-```text
-assets/demo.webm
-```
+https://github.com/user-attachments/assets/fe3163a6-575b-441e-b103-9e25c943431d
 
 ---
 
