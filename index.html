@@ -5,15 +5,25 @@
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Memory Game</title>
+    <meta name="theme-color" content="#ffffff">
+    <link rel="manifest" href="manifest.json">
     <link rel="icon" type="image/png" href="assets/favicon.png">
     <link rel='stylesheet' href='main.css'>
 </head>
 
 <body>
     <div class="brand">
-        <img src="assets/favicon.png" alt="Memory Game Logo" class="logo">
+        <img class="logo" src="./assets/icon-192.png" alt="Memory Game">
         <h1>Memory Game</h1>
     </div>
+
+    <div id="install-banner">
+        <button id="install-button">Install App</button>
+        <p id="firefox-install">
+            Firefox: Menu → Install
+        </p>
+    </div>
+
     <h2 id="scoreboard">Score: 0</h2>
     <h2 id="timer-board">Timeleft: 60 s</h2>
     <div class="container">
@@ -83,6 +93,17 @@
         </div>
     </div>
     <script src="game-logic.js"></script>
+    <script>
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", () => {
+                navigator.serviceWorker.register("./sw.js")
+                    .then(() => console.log("Service Worker registered"))
+                    .catch(error =>
+                        console.error("Service Worker registration failed:", error)
+                    );
+            });
+        }
+    </script>
 </body>
 
 </html>

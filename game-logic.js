@@ -172,3 +172,46 @@ function resetTurn() {
     secondIndex = null;
     lockBoard = false;
 }
+let deferredPrompt;
+
+const installBanner = document.getElementById("install-banner");
+const installButton = document.getElementById("install-button");
+
+installBanner.style.display = "none";
+
+window.addEventListener("beforeinstallprompt", event => {
+    event.preventDefault();
+
+    deferredPrompt = event;
+
+    installBanner.style.display = "block";
+});
+
+installButton.addEventListener("click", async () => {
+    if (!deferredPrompt) {
+        return;
+    }
+
+    deferredPrompt.prompt();
+
+    const { outcome } = await deferredPrompt.userChoice;
+
+    console.log(`Install prompt result: ${outcome}`);
+
+    deferredPrompt = null;
+
+    installBanner.style.display = "none";
+});
+
+window.addEventListener("appinstalled", () => {
+    console.log("Memory Game installed!");
+
+    installBanner.style.display = "none";
+});
+const isFirefox = navigator.userAgent.toLowerCase().includes("firefox");
+
+if (isFirefox && !window.matchMedia("(display-mode: standalone)").matches) {
+    installBanner.style.display = "block";
+    installButton.style.display = "none";
+    document.getElementById("firefox-install").style.display = "block";
+}
